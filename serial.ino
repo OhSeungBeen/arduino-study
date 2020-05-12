@@ -16,6 +16,7 @@ void loop() {
       // Serial.read()
       // 시리얼 통신 수신 버퍼에서 첫번째 문자열을 읽어 반환한다. 수신버퍼가 비어있으면 -1을 반환한다.
       int data = Serial.read(); 
+      // 시리얼 통신을 통하여 LED를 제어한다.
       if(data == '1'){
         digitalWrite(3, HIGH);
       }    
